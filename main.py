@@ -60,3 +60,10 @@ num_messages_to_store = 1000
 texts = log_messages_to_list(json_file, num_messages_to_store)
 
 print(f"Stored the first {num_messages_to_store} messages in 'splits'.")
+
+
+
+persist_directory = 'docs/chroma/'
+
+# Create the vector store
+vector_database = Chroma.from_texts(texts, embeddings)
