@@ -58,7 +58,7 @@ A list containing the text descriptions of 5 job postings.
 
 Output:
 
-A JSON object containing information extracted from each job posting.
+A JSON object named "jobs" containing information extracted from each job posting.
 
 Each entry in the JSON object should correspond to a single job posting.
 
@@ -70,7 +70,7 @@ company_name: The name of the company offering the job (if available, otherwise 
 
 location: The location of the company (city, state, country, etc., if available, otherwise "unknown", if it is "Anywhere/remote" also mark it as "unknown" ).""")
 
-            return jsonify(response.text)
+            return response.text
         else:
             return 'No question provided'
     else:
