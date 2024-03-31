@@ -1,2 +1,2 @@
 # Intern-company-recommender
-a recommendation for students where to intern, based on their skills.
+It uses RAG(Retrieval Augmented Generation) and draws from an Ethiopian dataset of over 10,000 job postings to recommend companies for internships based on skill set and preferred technology stack.
